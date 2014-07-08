@@ -1,0 +1,8 @@
+﻿@model  IEnumerable<Mvc4.Models.NoteTypesModel>
+
+<ul class="nav nav-tabs" role="tablist">
+    @foreach (var item in @Model)
+    {
+        <li><a href="#@item.NodeType">@item.NodeType</a></li>
+    }
+</ul>
